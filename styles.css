@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
+       url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
+       url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
+       url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Phantom Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #33d6a6, #338eda);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  border: 5px solid #ff8c37;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: #2c3e50;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.left-panel {
+  width: 25%;
+  background: #34495e;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 5px solid #ff8c37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.right-panel {
+  width: 50%;
+  background: #34495e;
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 5px solid #ff8c37;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-panel {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+}
+
+#ticket-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  animation: bounce 0.5s infinite;
+  position: relative;
+  z-index: 1;
+}
+
+#ticket-button img {
+  width: 300px;
+  transition: transform 0.3s, filter 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#ticket-button img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
