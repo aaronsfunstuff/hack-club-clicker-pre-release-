@@ -188,3 +188,65 @@ button:hover {
 .upgrade-item:hover {
   transform: scale(1.1);
 }
+
+.upgrade-tooltip {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #34495e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.upgrade-item:hover .upgrade-tooltip {
+  display: block;
+}
+
+#store {
+  margin-top: 20px;
+}
+
+#store div {
+  margin-bottom: 15px;
+  background: #34495e;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#achievements {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-panel, .right-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid #ff8c37;
+  }
+
+  .center-panel {
+    width: 100%;
+    border-bottom: 5px solid #ff8c37;
+  }
+
+  #upgrades {
+    height: auto;
+    overflow-x: scroll;
+  }
+
+  .scroll-container {
+    flex-direction: column;
+  }
+}
